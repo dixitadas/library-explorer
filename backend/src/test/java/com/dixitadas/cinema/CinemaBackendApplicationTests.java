@@ -1,4 +1,4 @@
-package com.dixitadas.cinema_backend;
+package com.dixitadas.cinema;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
