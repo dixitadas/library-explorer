@@ -1,2 +1,2 @@
-# cinema-booking-system
-A cinema ticket booking system that uses Java, Spring Boot, Kafka, and SQL to manage movies, showtimes, and seat reservations with an event-driven architecture.
+# library-explorer
+Library Explorer built with Spring Boot, MySQL, and React — featuring book search, categorization, user reviews, and ratings.
