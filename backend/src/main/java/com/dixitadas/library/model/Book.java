@@ -2,10 +2,12 @@ package com.dixitadas.library.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "book")
+@Table(name = "books")
 @Data
+@NoArgsConstructor
 public class Book {
 
     @Id
@@ -16,7 +18,7 @@ public class Book {
     @Column(unique = true)
     private String isbn;
     private String genre;
-    private int publishedYear;
+    private Integer publishedYear;
     @Column(length = 1000)
     private String description;
 
