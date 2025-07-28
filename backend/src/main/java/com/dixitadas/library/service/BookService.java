@@ -5,6 +5,7 @@ import com.dixitadas.library.repository.BookRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BookService {
@@ -19,11 +20,19 @@ public class BookService {
         return bookRepository.save(book);
     }
 
-    public List<Book> findAllBooks() {
-        return bookRepository.findAll();
+    public void deleteBook(Long id) {
+        bookRepository.deleteById(id);
     }
 
     public List<Book> searchBooks(String title) {
         return bookRepository.findByTitleContainingIgnoreCase(title);
+    }
+
+    public Optional<Book> searchById(Long id) {
+        return bookRepository.findById(id);
+    }
+
+    public List<Book> findAllBooks() {
+        return bookRepository.findAll();
     }
 }
