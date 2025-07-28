@@ -2,9 +2,11 @@ package com.dixitadas.library.service;
 
 import com.dixitadas.library.model.Book;
 import com.dixitadas.library.repository.BookRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BookService {
 
     private final BookRepository bookRepository;
